@@ -122,8 +122,12 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f5f6fa 0%, #ffffff 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: 80px;
+    color: white;
 }
 
 .hero-content {
@@ -134,12 +138,13 @@ nav {
     font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    color: var(--primary);
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .hero p {
     font-size: 1.25rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2.5rem;
     max-width: 600px;
 }
@@ -147,6 +152,26 @@ nav {
 .hero-actions {
     display: flex;
     gap: 1.5rem;
+}
+
+.btn-primary-light {
+    background-color: white;
+    color: var(--primary);
+}
+
+.btn-primary-light:hover {
+    background-color: var(--bg-alt);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--primary);
 }
 
 /* Buttons */
