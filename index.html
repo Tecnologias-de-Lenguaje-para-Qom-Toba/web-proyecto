@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigación Qom LM | Modelos de Lenguaje para la Lengua Qom</title>
+    <title data-i18n="page_title">QomL’aqtaq | Qom–Spanish corpus and tools</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +13,23 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Qom<span>LM</span></div>
+            <div class="logo">Qom<span>L’aqtaq</span></div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#datasets">Datasets</a></li>
-                <li><a href="#miembros">Miembros</a></li>
-                <li><a href="#financiamientos">Financiamiento</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#descripcion" data-i18n="nav_description">Descripción</a></li>
+                <li><a href="#traductor" data-i18n="nav_translator">Traductor</a></li>
+                <li><a href="#miembros" data-i18n="nav_members">Miembros</a></li>
+                <li><a href="#agradecimientos" data-i18n="nav_acknowledgements">Agradecimientos</a></li>
             </ul>
-            <div class="menu-toggle">
-                <i data-lucide="menu"></i>
+            <div class="header-actions">
+                <div class="lang-switch">
+                    <button id="lang-es" class="lang-btn active">ES</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                    <button class="lang-btn disabled" title="Próximamente">QOM</button>
+                </div>
+                <div class="menu-toggle">
+                    <i data-lucide="menu"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -32,117 +38,66 @@
         <section id="inicio" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Preservando el futuro de la lengua Qom a través de la IA</h1>
-                    <p>Investigación avanzada en modelos de lenguaje de gran escala aplicados a la lengua Qom, promoviendo la soberanía tecnológica y la diversidad lingüística.</p>
+                    <h1 data-i18n="hero_title">QomL’aqtaq and QomSpeech:</h1>
+                    <p data-i18n="hero_subtitle">A Qom–Spanish corpus and tools for NLP and language technology</p>
                     <div class="hero-actions">
-                        <a href="#herramientas" class="btn btn-primary-light">Ver Herramientas</a>
-                        <a href="#datasets" class="btn btn-outline-light">Explorar Datos</a>
+                        <a href="#traductor" class="btn btn-primary-light" data-i18n="hero_btn_translator">Try the Translator</a>
+                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_dataset">Download Dataset</a>
+                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_code">Code</a>
+                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_paper">Paper</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="herramientas" class="section">
+        <section id="descripcion" class="section">
             <div class="container">
-                <h2 class="section-title">Herramientas</h2>
-                <div class="grid cards-grid">
-                    <div class="card">
-                        <i data-lucide="cpu" class="card-icon"></i>
-                        <h3>Qom-Transformer v1</h3>
-                        <p>Modelo pre-entrenado optimizado para tareas de traducción y generación en lengua Qom.</p>
-                        <a href="#" class="card-link">Saber más <i data-lucide="arrow-right"></i></a>
-                    </div>
-                    <div class="card">
-                        <i data-lucide="languages" class="card-icon"></i>
-                        <h3>Traductor Asistido</h3>
-                        <p>Interfaz de traducción experimental para lingüistas y hablantes nativos.</p>
-                        <a href="#" class="card-link">Saber más <i data-lucide="arrow-right"></i></a>
-                    </div>
-                    <div class="card">
-                        <i data-lucide="terminal" class="card-icon"></i>
-                        <h3>SDK de Procesamiento</h3>
-                        <p>Librería en Python para la normalización y tokenización de textos en Qom.</p>
-                        <a href="#" class="card-link">Saber más <i data-lucide="arrow-right"></i></a>
-                    </div>
+                <h2 class="section-title" data-i18n="description_title">Descripción</h2>
+                <div class="description-text">
+                    <p data-i18n="description_p1">We release two complementary resources for the Qom language covering both text and speech, supporting research in natural language processing for low-resource and Indigenous languages.</p>
+                    <p data-i18n="description_p2">QomL’aqtaq is a Qom–Spanish parallel corpus for machine translation and other text-based tasks, while QomSpeech is a speech corpus of audio–text pairs in Qom for automatic speech recognition (ASR) and related technologies.</p>
+                    <p data-i18n="description_p3">Both datasets are accompanied by tools and models to facilitate their use.</p>
                 </div>
             </div>
         </section>
 
-        <section id="datasets" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Datasets</h2>
-                <div class="datasets-container">
-                    <div class="dataset-item">
-                        <div class="dataset-info">
-                            <h3>Corpus Qom Paralelo</h3>
-                            <p>50,000 pares de oraciones Qom-Castellano alineadas manualmente.</p>
-                        </div>
-                        <span class="badge">Open Access</span>
-                    </div>
-                    <div class="dataset-item">
-                        <div class="dataset-info">
-                            <h3>Grabaciones de Tradición Oral</h3>
-                            <p>Repositorio de audio etiquetado para tareas de reconocimiento de voz (ASR).</p>
-                        </div>
-                        <span class="badge">Bajo Solicitud</span>
-                    </div>
-                    <div class="dataset-item">
-                        <div class="dataset-info">
-                            <h3>Diccionario Digital Enriquecido</h3>
-                            <p>Base de datos léxica con anotaciones morfológicas detalladas.</p>
-                        </div>
-                        <span class="badge">Open Access</span>
-                    </div>
+        <section id="traductor" class="section section-alt">
+            <div class="container translator-demo">
+                <h2 class="section-title" data-i18n="translator_title">Traductor en línea</h2>
+                <p data-i18n="translator_text">We provide an online demo to explore Qom–Spanish translation using our models.</p>
+                <div class="translator-actions">
+                    <a href="#" class="btn btn-primary" data-i18n="translator_btn">Open Translator</a>
                 </div>
+                <p class="note" data-i18n="translator_note">Note: This system is intended for research purposes and may produce errors.</p>
             </div>
         </section>
 
         <section id="miembros" class="section">
             <div class="container">
-                <h2 class="section-title">Miembros</h2>
+                <h2 class="section-title" data-i18n="members_title">Miembros</h2>
                 <div class="grid members-grid">
-                    <div class="member-card">
-                        <div class="member-img"></div>
-                        <h3>Dra. Elena Alarcón</h3>
-                        <p>Directora de Investigación</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"></div>
-                        <h3>Ing. Marcos Qom</h3>
-                        <p>Especialista en NLP</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-img"></div>
-                        <h3>Lic. Sofía Méndez</h3>
-                        <p>Lingüista Computacional</p>
-                    </div>
+                    <div class="member-name">Paola Cúneo</div>
+                    <div class="member-name">Temis Tacconi</div>
+                    <div class="member-name">Christian Cossio</div>
+                    <div class="member-name">Viviana Cotik</div>
+                    <div class="member-name">Belu Ticona</div>
+                    <div class="member-name">Aleksei Korablev</div>
+                    <div class="member-name">Pablo Laciana</div>
+                    <div class="member-name">Macarena Fernández Urquiza</div>
                 </div>
             </div>
         </section>
 
-        <section id="financiamientos" class="section section-alt">
+        <section id="agradecimientos" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Financiamiento</h2>
-                <div class="funding-logos">
-                    <div class="funding-placeholder">Entidad de Ciencia y Tecnología</div>
-                    <div class="funding-placeholder">Universidad Nacional</div>
-                    <div class="funding-placeholder">Consejo de Investigación</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="section">
-            <div class="container contact-container">
-                <h2 class="section-title">Contacto</h2>
-                <p>¿Interesado en colaborar o saber más sobre nuestro proyecto? No dudes en contactarnos.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i data-lucide="mail"></i>
-                        <span>contacto@qom-lm.research</span>
-                    </div>
-                    <div class="contact-item">
-                        <i data-lucide="map-pin"></i>
-                        <span>Resistencia, Chaco, Argentina</span>
+                <h2 class="section-title" data-i18n="acknowledgements_title">Agradecimientos</h2>
+                <div class="acknowledgements-content">
+                    <p data-i18n="acknowledgements_text1">This work was partially supported by [Funding Agency / Project Name / Grant No.].</p>
+                    <p data-i18n="acknowledgements_text2">The datasets … were created with support from Lacuna Fund, Google.org, Instituto de Lingüística (...), ICC (CONICET-UBA).</p>
+                    <div class="funding-logos">
+                        <img src="assets/Lacuna-Fund.png" alt="Lacuna Fund" class="partner-logo">
+                        <img src="assets/Google_2015_logo.svg" alt="Google.org" class="partner-logo">
+                        <img src="assets/logo-ICC.png" alt="ICC (CONICET-UBA)" class="partner-logo">
                     </div>
                 </div>
             </div>
@@ -151,7 +106,24 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Proyecto de Investigación Qom LM. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><strong data-i18n="footer_contact">Contact:</strong> <a href="mailto:lacunaqom@googlegroups.com">lacunaqom@googlegroups.com</a></p>
+                    <p><strong data-i18n="footer_affiliation">Affiliation:</strong> <span data-i18n="footer_affiliation_val">…</span></p>
+                    <p><strong data-i18n="footer_license">License:</strong> <span data-i18n="footer_license_val">…</span></p>
+                </div>
+                <div class="footer-disclaimer">
+                    <p data-i18n="footer_disclaimer">The views expressed herein do not necessarily represent those of Lacuna Fund, its Steering Committee, its funders, or Meridian Institute</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+   </div>
+            </div>
         </div>
     </footer>
 
