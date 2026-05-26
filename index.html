@@ -11,121 +11,171 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">Qom<span>L’aqtaq</span></div>
-            <ul class="nav-links">
-                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
-                <li><a href="#descripcion" data-i18n="nav_description">Descripción</a></li>
-                <li><a href="#traductor" data-i18n="nav_translator">Traductor</a></li>
-                <li><a href="#miembros" data-i18n="nav_members">Miembros</a></li>
-                <li><a href="#agradecimientos" data-i18n="nav_acknowledgements">Agradecimientos</a></li>
-            </ul>
-            <div class="header-actions">
-                <div class="lang-switch">
-                    <button id="lang-es" class="lang-btn active">ES</button>
-                    <button id="lang-en" class="lang-btn">EN</button>
-                    <button class="lang-btn disabled" title="Próximamente">QOM</button>
+    <div class="site-wrapper">
+        <header>
+            <nav class="container">
+                <div class="logo">Qom<span>L’aqtaq</span></div>
+                <ul class="nav-links">
+                    <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#descripcion" data-i18n="nav_description">Descripción</a></li>
+                    <li><a href="#traductor" data-i18n="nav_translator">Traductor</a></li>
+                    <li><a href="#miembros" data-i18n="nav_members">Miembros</a></li>
+                    <li><a href="#agradecimientos" data-i18n="nav_acknowledgements">Agradecimientos</a></li>
+                </ul>
+                <div class="header-actions">
+                    <div class="lang-switch">
+                        <button id="lang-es" class="lang-btn active">ES</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                        <button class="lang-btn disabled" title="Próximamente">QOM</button>
+                    </div>
+                    <div class="menu-toggle">
+                        <i data-lucide="menu"></i>
+                    </div>
                 </div>
-                <div class="menu-toggle">
-                    <i data-lucide="menu"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <section id="inicio" class="hero">
+        <main>
+            <section id="inicio" class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 data-i18n="hero_title">QomL’aqtaq and QomSpeech:</h1>
+                        <p data-i18n="hero_subtitle">A Qom–Spanish corpus and tools for NLP and language technology</p>
+                        <div class="hero-actions">
+                            <a href="#traductor" class="btn btn-primary-light" data-i18n="hero_btn_translator">Try the Translator</a>
+                            <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_dataset">Download Dataset</a>
+                            <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_code">Code</a>
+                            <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_paper">Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="descripcion" class="section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="description_title">Descripción</h2>
+                    <div class="description-text">
+                        <p data-i18n="description_p1">We release two complementary resources for the Qom language covering both text and speech, supporting research in natural language processing for low-resource and Indigenous languages.</p>
+                        <p data-i18n="description_p2">QomL’aqtaq is a Qom–Spanish parallel corpus for machine translation and other text-based tasks, while QomSpeech is a speech corpus of audio–text pairs in Qom for automatic speech recognition (ASR) and related technologies.</p>
+                        <p data-i18n="description_p3">Both datasets are accompanied by tools and models to facilitate their use.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="traductor" class="section section-alt">
+                <div class="container translator-demo">
+                    <h2 class="section-title" data-i18n="translator_title">Traductor en línea</h2>
+                    <p data-i18n="translator_text">We provide an online demo to explore Qom–Spanish translation using our models.</p>
+                    <div class="translator-actions">
+                        <a href="#" class="btn btn-primary" data-i18n="translator_btn">Open Translator</a>
+                    </div>
+                    <p class="note" data-i18n="translator_note">Note: This system is intended for research purposes and may produce errors.</p>
+                </div>
+            </section>
+
+            <section id="miembros" class="section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="members_title">Miembros</h2>
+                    <div class="members-list">
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Paola Cúneo</span>, <span class="member-affiliation">Instituto de Lingüística. Facultad de Filosofía y Letras. UBA - CONICET</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:pcuneo@filo.uba.ar" class="member-email">pcuneo@filo.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Temis Tacconi</span>, <span class="member-affiliation">Instituto de Investigaciones Geohistóricas (IIGHI). CONICET - UNNE</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:ttacconi@conicet.gov.ar" class="member-email">ttacconi@conicet.gov.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Christian Cossio</span>, <span class="member-affiliation">Departamento de Computación. Facultad de Ciencias Exactas y Naturales. UBA</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:ccossio@dc.uba.ar" class="member-email">ccossio@dc.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Viviana Cotik</span>, <span class="member-affiliation">Instituto de Investigación de Ciencias de la Computación (ICC). UBA</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:vcotik@dc.uba.ar" class="member-email">vcotik@dc.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Belu Ticona</span>, <span class="member-affiliation">Departamento de Computación. Facultad de Ciencias Exactas y Naturales. UBA</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:bticona@dc.uba.ar" class="member-email">bticona@dc.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Aleksei Korablev</span>, <span class="member-affiliation">Instituto de Investigación de Ciencias de la Computación (ICC). UBA</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:akorablev@dc.uba.ar" class="member-email">akorablev@dc.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Pablo Laciana</span>, <span class="member-affiliation">Departamento de Computación. Facultad de Ciencias Exactas y Naturales. UBA</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:placiana@dc.uba.ar" class="member-email">placiana@dc.uba.ar</a>
+                            </p>
+                        </div>
+                        <div class="member-item">
+                            <p class="member-info">
+                                <span class="member-name">Macarena Fernández Urquiza</span>, <span class="member-affiliation">Instituto de Investigaciones Geohistóricas (IIGHI). CONICET - UNNE</span>
+                            </p>
+                            <p class="member-email-wrapper">
+                                <a href="mailto:mfernandez@conicet.gov.ar" class="member-email">mfernandez@conicet.gov.ar</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="agradecimientos" class="section section-alt">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="acknowledgements_title">Agradecimientos</h2>
+                    <div class="acknowledgements-content">
+                        <p data-i18n="acknowledgements_text1">This work was partially supported by [Funding Agency / Project Name / Grant No.].</p>
+                        <p data-i18n="acknowledgements_text2">The datasets … were created with support from Lacuna Fund, Google.org, Instituto de Lingüística (...), ICC (CONICET-UBA).</p>
+                        <div class="funding-logos">
+                            <img src="assets/Lacuna-Fund.png" alt="Lacuna Fund" class="partner-logo">
+                            <img src="assets/Google_2015_logo.svg" alt="Google.org" class="partner-logo">
+                            <img src="assets/logo-ICC.png" alt="ICC (CONICET-UBA)" class="partner-logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
             <div class="container">
-                <div class="hero-content">
-                    <h1 data-i18n="hero_title">QomL’aqtaq and QomSpeech:</h1>
-                    <p data-i18n="hero_subtitle">A Qom–Spanish corpus and tools for NLP and language technology</p>
-                    <div class="hero-actions">
-                        <a href="#traductor" class="btn btn-primary-light" data-i18n="hero_btn_translator">Try the Translator</a>
-                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_dataset">Download Dataset</a>
-                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_code">Code</a>
-                        <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_paper">Paper</a>
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p><strong data-i18n="footer_contact">Contact:</strong> <a href="mailto:lacunaqom@googlegroups.com">lacunaqom@googlegroups.com</a></p>
+                        <p><strong data-i18n="footer_affiliation">Affiliation:</strong> <span data-i18n="footer_affiliation_val">…</span></p>
+                        <p><strong data-i18n="footer_license">License:</strong> <span data-i18n="footer_license_val">…</span></p>
+                    </div>
+                    <div class="footer-disclaimer">
+                        <p data-i18n="footer_disclaimer">The views expressed herein do not necessarily represent those of Lacuna Fund, its Steering Committee, its funders, or Meridian Institute</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="descripcion" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="description_title">Descripción</h2>
-                <div class="description-text">
-                    <p data-i18n="description_p1">We release two complementary resources for the Qom language covering both text and speech, supporting research in natural language processing for low-resource and Indigenous languages.</p>
-                    <p data-i18n="description_p2">QomL’aqtaq is a Qom–Spanish parallel corpus for machine translation and other text-based tasks, while QomSpeech is a speech corpus of audio–text pairs in Qom for automatic speech recognition (ASR) and related technologies.</p>
-                    <p data-i18n="description_p3">Both datasets are accompanied by tools and models to facilitate their use.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="traductor" class="section section-alt">
-            <div class="container translator-demo">
-                <h2 class="section-title" data-i18n="translator_title">Traductor en línea</h2>
-                <p data-i18n="translator_text">We provide an online demo to explore Qom–Spanish translation using our models.</p>
-                <div class="translator-actions">
-                    <a href="#" class="btn btn-primary" data-i18n="translator_btn">Open Translator</a>
-                </div>
-                <p class="note" data-i18n="translator_note">Note: This system is intended for research purposes and may produce errors.</p>
-            </div>
-        </section>
-
-        <section id="miembros" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="members_title">Miembros</h2>
-                <div class="grid members-grid">
-                    <div class="member-name">Paola Cúneo</div>
-                    <div class="member-name">Temis Tacconi</div>
-                    <div class="member-name">Christian Cossio</div>
-                    <div class="member-name">Viviana Cotik</div>
-                    <div class="member-name">Belu Ticona</div>
-                    <div class="member-name">Aleksei Korablev</div>
-                    <div class="member-name">Pablo Laciana</div>
-                    <div class="member-name">Macarena Fernández Urquiza</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="agradecimientos" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title" data-i18n="acknowledgements_title">Agradecimientos</h2>
-                <div class="acknowledgements-content">
-                    <p data-i18n="acknowledgements_text1">This work was partially supported by [Funding Agency / Project Name / Grant No.].</p>
-                    <p data-i18n="acknowledgements_text2">The datasets … were created with support from Lacuna Fund, Google.org, Instituto de Lingüística (...), ICC (CONICET-UBA).</p>
-                    <div class="funding-logos">
-                        <img src="assets/Lacuna-Fund.png" alt="Lacuna Fund" class="partner-logo">
-                        <img src="assets/Google_2015_logo.svg" alt="Google.org" class="partner-logo">
-                        <img src="assets/logo-ICC.png" alt="ICC (CONICET-UBA)" class="partner-logo">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p><strong data-i18n="footer_contact">Contact:</strong> <a href="mailto:lacunaqom@googlegroups.com">lacunaqom@googlegroups.com</a></p>
-                    <p><strong data-i18n="footer_affiliation">Affiliation:</strong> <span data-i18n="footer_affiliation_val">…</span></p>
-                    <p><strong data-i18n="footer_license">License:</strong> <span data-i18n="footer_license_val">…</span></p>
-                </div>
-                <div class="footer-disclaimer">
-                    <p data-i18n="footer_disclaimer">The views expressed herein do not necessarily represent those of Lacuna Fund, its Steering Committee, its funders, or Meridian Institute</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-   </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
