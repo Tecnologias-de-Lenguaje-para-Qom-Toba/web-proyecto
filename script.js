@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_affiliation: "Affiliation:",
             footer_affiliation_val: "…",
             footer_license: "License:",
-            footer_license_val: "…",
+            footer_license_val: "...",
             footer_disclaimer: "The views expressed herein do not necessarily represent those of Lacuna Fund, its Steering Committee, its funders, or Meridian Institute"
         }
     };
