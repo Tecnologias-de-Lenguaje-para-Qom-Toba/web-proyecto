@@ -22,6 +22,8 @@
                 <ul class="nav-links">
                     <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
                     <li><a href="#descripcion" data-i18n="nav_description">Descripción</a></li>
+                    <li><a href="#datasets" data-i18n="nav_datasets">Datasets</a></li>
+                    <li><a href="#research" data-i18n="nav_research">Investigación</a></li>
                     <li><a href="#traductor" data-i18n="nav_translator">Traductor</a></li>
                     <li><a href="#miembros" data-i18n="nav_members">Miembros</a></li>
                     <li><a href="#agradecimientos" data-i18n="nav_acknowledgements">Agradecimientos</a></li>
@@ -32,9 +34,9 @@
                         <button id="lang-en" class="lang-btn">EN</button>
                         <button class="lang-btn disabled" title="Próximamente">QOM</button>
                     </div>
-                    <div class="menu-toggle">
+                    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">
                         <i data-lucide="menu"></i>
-                    </div>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -48,9 +50,9 @@
                         <div class="hero-actions">
                             <a href="#traductor" class="btn btn-primary-light" data-i18n="hero_btn_translator">Try the
                                 Translator</a>
-                            <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_dataset">Download Dataset</a>
+                            <a href="#datasets" class="btn btn-outline-light" data-i18n="hero_btn_dataset">Explore Datasets</a>
                             <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_code">Code</a>
-                            <a href="#" class="btn btn-outline-light" data-i18n="hero_btn_paper">Paper</a>
+                            <a href="#research" class="btn btn-outline-light" data-i18n="hero_btn_paper">Research</a>
                         </div>
                     </div>
                 </div>
@@ -68,6 +70,61 @@
                             pairs in Qom for automatic speech recognition (ASR) and related technologies.</p>
                         <p data-i18n="description_p3">Both datasets are accompanied by tools and models to facilitate
                             their use.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="datasets" class="section section-alt">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="datasets_title">Datasets</h2>
+                    <p class="section-intro" data-i18n="datasets_intro">The project develops two complementary
+                        resources for working with written and spoken Qom.</p>
+
+                    <div class="resource-grid">
+                        <article class="resource-card">
+                            <p class="resource-eyebrow" data-i18n="dataset_text_type">Text resource</p>
+                            <h3>QomL’actaqa</h3>
+                            <p data-i18n="dataset_text_description">A Qom–Spanish parallel corpus designed to support
+                                machine translation, linguistic research, teaching, and language documentation.</p>
+                            <p class="resource-status" data-i18n="dataset_availability">Access and licensing details
+                                will be published here.</p>
+                        </article>
+
+                        <article class="resource-card">
+                            <p class="resource-eyebrow" data-i18n="dataset_speech_type">Speech resource</p>
+                            <h3>QomSpeech</h3>
+                            <p data-i18n="dataset_speech_description">A collection of Qom audio recordings paired with
+                                written transcriptions for speech recognition and spoken-language research.</p>
+                            <p class="resource-status" data-i18n="dataset_availability">Access and licensing details
+                                will be published here.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research" class="section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="research_title">Research</h2>
+                    <p class="section-intro" data-i18n="research_intro">Our work connects language documentation with
+                        natural language processing and speech technology for Qom.</p>
+
+                    <div class="research-grid">
+                        <article class="research-card">
+                            <h3 data-i18n="research_areas_title">Research areas</h3>
+                            <ul class="research-list">
+                                <li data-i18n="research_area_mt">Machine translation and cross-lingual NLP</li>
+                                <li data-i18n="research_area_asr">Automatic speech recognition and spoken-language
+                                    technology</li>
+                                <li data-i18n="research_area_documentation">Language documentation, teaching, and
+                                    community-centered technologies</li>
+                            </ul>
+                        </article>
+
+                        <article class="research-card">
+                            <h3 data-i18n="research_outputs_title">Publications and outputs</h3>
+                            <p data-i18n="research_outputs_text">Articles, technical reports, models, and related
+                                materials will be listed here as they become available.</p>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -179,6 +236,15 @@
                             </p>
                             <p class="member-role" data-i18n="role_victoria">Asesoramiento antropológico</p>
                         </div>
+                    </div>
+
+                    <h3 class="members-subtitle" data-i18n="members_community_title">Miembros de la comunidad y
+                        colaboraciones</h3>
+                    <div class="community-note">
+                        <p data-i18n="members_community_text">Esta sección reconocerá a miembros de la comunidad qom,
+                            hablantes, educadores y organizaciones que contribuyen a la creación, revisión y uso
+                            responsable de estos recursos. Los nombres y detalles se incorporarán con el consentimiento
+                            de cada colaborador.</p>
                     </div>
                 </div>
             </section>
